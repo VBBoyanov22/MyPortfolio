@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, Container, Paper, Grid, Avatar } from '@mui/material';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
+import { useNavigate } from 'react-router-dom';
 import pfp from '../assets/pfp.jpg';
 import typescriptIcon from '../assets/typescript.png';
 import reactIcon from '../assets/react.png';
@@ -59,6 +60,8 @@ const skillsData = {
 };
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <Container 
       maxWidth={false} 
@@ -89,6 +92,7 @@ const Home: React.FC = () => {
             fontWeight: 500,
             '&:hover': { color: '#00b894' },
           }}
+          onClick={() => navigate('/')}
         >
           Home
         </Typography>
@@ -100,6 +104,7 @@ const Home: React.FC = () => {
             fontWeight: 500,
             '&:hover': { color: '#00b894' },
           }}
+          onClick={() => navigate('/projects')}
         >
           Projects
         </Typography>
@@ -111,6 +116,7 @@ const Home: React.FC = () => {
             fontWeight: 500,
             '&:hover': { color: '#00b894' },
           }}
+          onClick={() => navigate('/posts')}
         >
           Posts
         </Typography>
@@ -122,6 +128,7 @@ const Home: React.FC = () => {
             fontWeight: 500,
             '&:hover': { color: '#00b894' },
           }}
+          onClick={() => navigate('/components')}
         >
           Components
         </Typography>
