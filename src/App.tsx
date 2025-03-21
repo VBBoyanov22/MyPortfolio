@@ -4,7 +4,6 @@ import { ThemeProvider, createTheme } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import Home from './components/Home';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
 import { Box } from '@mui/material';
 
 const theme = createTheme({
@@ -76,7 +75,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Router>
       </Box>

@@ -398,7 +398,7 @@ const Home: React.FC = () => {
             fontSize: '0.875rem',
           }}
         >
-          © 2024 Veselin Boyanov. All rights reserved.
+          © 2025 Veselin Boyanov. All rights reserved.
         </Typography>
         <Typography
           component="a"
